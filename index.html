@@ -257,41 +257,40 @@
         }
 
         .input-container {
-    padding: 15px;
-    display: flex;
-    gap: 10px;
-    border-top: 1px solid #eee;
-    background: white;
-    align-items: center;
-}
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+            border-top: 1px solid #eee;
+            background: white;
+            align-items: center;
+        }
 
-input {
-    flex: 1;
-    padding: 12px 15px;
-    border: 2px solid #e2e8f0;
-    border-radius: 8px;
-    outline: none;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;}
+        input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            outline: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
 
-    input:focus {
-    border-color: #d0ecff;
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
-}
+        input:focus {
+            border-color: #d0ecff;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
 
-
-button {
-    background: #3498db;
-    color: white;
-    border: none;
-    padding: 0 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 500;
-    height: 40px;
-    transition: all 0.3s ease;
-}
-
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            height: 40px;
+            transition: all 0.3s ease;
+        }
 
         .typing-indicator {
             display: none;
@@ -410,7 +409,6 @@ button {
                     </a>
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <!-- <a href="#chatbot" class="text-gray-600 hover:text-blue-600 transition-colors">Chatbot</a> -->
                     <a href="About-Us.html" class="text-gray-600 hover:text-blue-600 transition-colors">About Us</a>
                     <a href="Contact-Us.html" class="text-gray-600 hover:text-blue-600 transition-colors">Contact Us</a>
                 </nav>
@@ -422,13 +420,13 @@ button {
     <section class="hero-section">
         <div class="hero-content">
             <h1>Welcome to Mortgage Mate</h1>
-            <p>Calculate your mortgage payments with ease using our advanced calculator. Get instant estimates and make informed decisions about your home financing options.</p>
+            <p>Calculate your home loan EMI with ease using our advanced calculator. Get instant estimates and make informed decisions about your home financing options.</p>
             <button 
-  style="margin-top: 20px; padding: 10px 30px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;"
-  onclick="window.location.href='Calculator.html';"
->
-  Get Started
-</button>
+                style="margin-top: 20px; padding: 10px 30px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                onclick="window.location.href='Calculator.html';"
+            >
+                Get Started
+            </button>
         </div>
         <div class="hero-image">
             <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mortgage Calculator">
@@ -441,8 +439,8 @@ button {
         <div class="services-grid">
             <div class="service-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" class="service-image" alt="Calculator">
-                <h3>Mortgage Calculator</h3>
-                <p>Advanced calculation tools for accurate payment estimates</p>
+                <h3>EMI Calculator</h3>
+                <p>Advanced calculation tools for accurate EMI estimates</p>
             </div>
             <div class="service-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/6486/6486196.png" class="service-image" alt="Comparison">
@@ -452,7 +450,7 @@ button {
             <div class="service-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/805/805401.png" class="service-image" alt="Advice">
                 <h3>Expert Advice</h3>
-                <p>Professional guidance from mortgage specialists</p>
+                <p>Professional guidance from loan specialists</p>
             </div>
         </div>
     </section>
@@ -462,7 +460,7 @@ button {
         <h2 class="section-title">Frequently Asked Questions</h2>
         <div class="faq-container">
             <div class="faq-item">
-                <div class="faq-question">How accurate is the mortgage calculator?</div>
+                <div class="faq-question">How accurate is the EMI calculator?</div>
                 <div class="faq-answer">Our calculator uses current market rates and advanced algorithms to provide accurate estimates.</div>
             </div>
             <div class="faq-item">
@@ -532,11 +530,11 @@ button {
 
     <div class="chat-container" id="chatContainer">
         <div class="chat-header">
-            <h3>Mortgage Expert</h3>
+            <h3>Home Loan Expert</h3>
         </div>
         <div class="chat-messages" id="chatMessages">
             <div class="welcome-message">
-                <p>Hello! I'm your mortgage assistant. Ask me to calculate payments or explain mortgage concepts.</p>
+                <p>Hello! I'm your home loan assistant. Ask me to calculate EMI or explain loan concepts.</p>
             </div>
             <div class="typing-indicator" id="typingIndicator">
                 <span class="typing-dot"></span>
@@ -545,7 +543,7 @@ button {
             </div>
         </div>
         <div class="input-container">
-            <input type="text" id="userInput" placeholder="Ask about mortgages..." autocomplete="off">
+            <input type="text" id="userInput" placeholder="Ask about home loans..." autocomplete="off">
             <button class="voice-button" id="voiceButton" title="Voice input">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1 1.93c-3.94-.49-7-3.85-7-7.93h2c0 3.31 2.69 6 6 6s6-2.69 6-6h2c0 4.08-3.06 7.44-7 7.93V19h4v2H8v-2h4v-3.07z"/>
@@ -592,18 +590,21 @@ button {
         let conversationHistory = [
             {
                 role: "system",
-                content: `You are a helpful mortgage expert assistant. Follow these rules:
+                content: `You are a helpful home loan expert assistant. Follow these rules:
 1. Provide clear, concise answers without markdown formatting
 2. Use simple bullet points with • instead of dashes
 3. Never use tables or code blocks
 4. Avoid special characters like *, |, or #
 5. Explain concepts in plain text
 6. Use line breaks for better readability
-7. Keep paragraphs short (2-3 lines maximum)`
+7. Keep paragraphs short (2-3 lines maximum)
+8. All currency amounts should be in Indian Rupees (₹)
+9. Use Indian number formatting (e.g., ₹10,00,000 instead of ₹1,000,000)
+10. Understand terms like lakh (₹1,00,000) and crore (₹1,00,00,000)`
             },
             {
                 role: "assistant",
-                content: "Hello! I'm your mortgage assistant. I can calculate payments or explain mortgage concepts. How can I help you today?"
+                content: "Hello! I'm your home loan assistant. I can calculate EMI or explain loan concepts. How can I help you today?"
             }
         ];
 
@@ -637,7 +638,7 @@ button {
             addError('Voice recognition is not supported in your browser');
         }
 
-        // Enhanced Natural Language Processor
+        // Enhanced Natural Language Processor for Indian context
         function extractMortgageDetails(message) {
             const details = {
                 principal: null,
@@ -646,42 +647,44 @@ button {
                 type: detectMortgageType(message)
             };
 
-            // Enhanced principal extraction logic
-            // 1. Prioritize $ amounts
-            const dollarMatch = message.match(/\$([\d,]+(?:\.\d+)?)\s*(k|thousand|million)?/i);
-            if (dollarMatch) {
-                details.principal = parseFloat(dollarMatch[1].replace(/,/g, ''));
-                const suffix = dollarMatch[2]?.toLowerCase();
+            // Enhanced principal extraction logic for Indian context
+            // 1. Prioritize ₹ amounts
+            const rupeeMatch = message.match(/₹([\d,]+(?:\.\d+)?)\s*(lakh|crore|cr|k|thousand|million)?/i);
+            if (rupeeMatch) {
+                details.principal = parseFloat(rupeeMatch[1].replace(/,/g, ''));
+                const suffix = rupeeMatch[2]?.toLowerCase();
+                if (suffix === 'lakh') details.principal *= 100000;
+                if (suffix === 'crore' || suffix === 'cr') details.principal *= 10000000;
                 if (suffix === 'k' || suffix === 'thousand') details.principal *= 1000;
                 if (suffix === 'million') details.principal *= 1000000;
             }
 
-            // 2. Look for numeric values with unit suffixes
+            // 2. Look for numeric values with Indian unit suffixes
             if (!details.principal) {
-                const unitMatch = message.match(/(\d[\d,.]*)\s*(k|thousand|million)/i);
+                const unitMatch = message.match(/(\d[\d,.]*)\s*(lakh|crore|lacs|cr)/i);
                 if (unitMatch) {
                     details.principal = parseFloat(unitMatch[1].replace(/,/g, ''));
                     const suffix = unitMatch[2].toLowerCase();
-                    if (suffix === 'k' || suffix === 'thousand') details.principal *= 1000;
-                    if (suffix === 'million') details.principal *= 1000000;
+                    if (suffix === 'lakh' || suffix === 'lacs') details.principal *= 100000;
+                    if (suffix === 'crore' || suffix === 'cr') details.principal *= 10000000;
                 }
             }
 
             // 3. Find largest numeric value in message
             if (!details.principal) {
-                const numbers = message.match(/(\d{1,3}(?:,\d{3})*(?:\.\d+)?|\d+\.\d+|\d+)/g) || [];
+                const numbers = message.match(/(\d{1,2}(?:,\d{2})*(?:,\d{3})*(?:\.\d+)?|\d+\.\d+|\d+)/g) || [];
                 const parsed = numbers.map(n => parseFloat(n.replace(/,/g, '')));
                 if (parsed.length > 0) details.principal = Math.max(...parsed);
             }
 
-            // FIXED RATE EXTRACTION LOGIC
+            // FIXED RATE EXTRACTION LOGIC for Indian context
             let rateMatch;
             // Priority 1: Rates with @ or "at" indicator
             rateMatch = message.match(/(?:@|at\s+)(\d+\.?\d*)%?/i);
             // Priority 2: Any percentage value
             if (!rateMatch) rateMatch = message.match(/(\d+\.?\d*)%/);
             // Priority 3: Numbers near rate-related terms
-            if (!rateMatch) rateMatch = message.match(/(\d+\.?\d*)(?=\s*(?:percent|rate|apr))/i);
+            if (!rateMatch) rateMatch = message.match(/(\d+\.?\d*)(?=\s*(?:percent|rate|apr|interest))/i);
             
             details.rate = rateMatch ? parseFloat(rateMatch[1]) : null;
 
@@ -689,7 +692,7 @@ button {
             const termMatch = message.match(/(\d+)\s*(?:year|yr|y)/i) || message.match(/\b(\d+)\s*-\s*year/i);
             details.years = termMatch ? parseInt(termMatch[1]) : null;
 
-            // Final validation with realistic rate filtering
+            // Final validation with realistic Indian rate filtering
             const allNumbers = message.match(/(\d+\.\d+|\d+)/g) || [];
             const parsedNumbers = allNumbers.map(Number);
             
@@ -697,11 +700,11 @@ button {
                 details.principal = Math.max(...parsedNumbers);
             }
             if (!details.rate && parsedNumbers.length > 0) {
-                // Filter for realistic interest rates (0.1% - 20%)
-                details.rate = parsedNumbers.find(n => n > 0.1 && n < 20);
+                // Filter for realistic Indian interest rates (5% - 20%)
+                details.rate = parsedNumbers.find(n => n > 5 && n < 20);
             }
             if (!details.years && parsedNumbers.length > 0) {
-                details.years = parsedNumbers.find(n => Number.isInteger(n) && n > 0 && n <= 50);
+                details.years = parsedNumbers.find(n => Number.isInteger(n) && n > 0 && n <= 30);
             }
 
             return details;
@@ -715,20 +718,20 @@ button {
             return 'Fixed Rate'; // Default assumption
         }
 
-        // Enhanced Calculation Handler
+        // Enhanced Calculation Handler for Indian context
         function handleMortgageQuery(message) {
             const details = extractMortgageDetails(message);
             
-            // Dynamic error messages
+            // Dynamic error messages for Indian context
             const missing = [];
-            if (!details.principal) missing.push('loan amount');
-            if (!details.rate) missing.push('interest rate');
-            if (!details.years) missing.push('loan term');
+            if (!details.principal) missing.push('loan amount (e.g., ₹50 lakh)');
+            if (!details.rate) missing.push('interest rate (e.g., 8.5%)');
+            if (!details.years) missing.push('loan term (e.g., 20 years)');
 
             if (missing.length > 0) {
                 return `Please provide:\n${missing.map(m => `• ${m.charAt(0).toUpperCase() + m.slice(1)}`).join('\n')}\n\n` +
-                       `Example: "Calculate ${details.years || '30'}-year ${details.type.toLowerCase()} mortgage ` +
-                       `for $${details.principal?.toLocaleString() || '400,000'} at ${details.rate || '3.75'}%"`;
+                       `Example: "Calculate ${details.years || '20'}-year ${details.type.toLowerCase()} home loan ` +
+                       `for ₹${(details.principal || 5000000).toLocaleString('en-IN')} at ${details.rate || '8.5'}%"`;
             }
 
             const result = calculateMortgage(details);
@@ -737,11 +740,11 @@ button {
             const resultDiv = document.createElement('div');
             resultDiv.className = 'mortgage-result';
             
-            let resultText = `${result.type.toUpperCase()} MORTGAGE\n\n` +
-                             `Loan Amount: $${details.principal.toLocaleString()}\n` +
+            let resultText = `${result.type.toUpperCase()} HOME LOAN\n\n` +
+                             `Loan Amount: ₹${details.principal.toLocaleString('en-IN')}\n` +
                              `Interest Rate: ${details.rate}%\n` +
                              `Loan Term: ${details.years} years\n\n` +
-                             `Monthly Payment: $${result.monthlyPayment.toLocaleString(undefined, {
+                             `Monthly EMI: ₹${result.monthlyPayment.toLocaleString('en-IN', {
                                  minimumFractionDigits: 2,
                                  maximumFractionDigits: 2
                              })}`;
@@ -749,11 +752,11 @@ button {
             if (result.adjustmentNotice) {
                 resultText += `\n\nNote: ${result.adjustmentNotice}`;
             } else {
-                resultText += `\n\nTotal Payments: $${result.totalPayments.toLocaleString(undefined, {
+                resultText += `\n\nTotal Payments: ₹${result.totalPayments.toLocaleString('en-IN', {
                     minimumFractionDigits: 2,
                     maximumFractionDigits: 2
                 })}\n` +
-                              `Total Interest: $${result.totalInterest.toLocaleString(undefined, {
+                              `Total Interest: ₹${result.totalInterest.toLocaleString('en-IN', {
                                   minimumFractionDigits: 2,
                                   maximumFractionDigits: 2
                               })}\n` +
@@ -764,10 +767,10 @@ button {
             chatMessages.insertBefore(resultDiv, typingIndicator);
             chatMessages.scrollTop = chatMessages.scrollHeight;
             
-            return `Here's your ${result.type.toLowerCase()} mortgage calculation:`;
+            return `Here's your ${result.type.toLowerCase()} home loan calculation:`;
         }
 
-        // Enhanced Mortgage Calculator
+        // Enhanced Mortgage Calculator for Indian context
         function calculateMortgage(details) {
             const principal = details.principal;
             const monthlyRate = details.rate / 100 / 12;
@@ -813,9 +816,9 @@ button {
             return /hello|hi|hey|good morning|good afternoon|greetings|what's up|howdy/i.test(message);
         }
 
-        // Updated mortgage query detection
+        // Updated mortgage query detection for Indian context
         function isMortgageQuery(message) {
-            return /(mortgage|loan|payment|calculate|refinance|arm|fixed|adjustable|interest\s*only)/i.test(message);
+            return /(home loan|emi|loan|payment|calculate|refinance|arm|fixed|adjustable|interest\s*only)/i.test(message);
         }
 
         // Add message to chat with cleaned formatting
@@ -831,7 +834,7 @@ button {
                 .replace(/- /g, '\n• ')     // Convert dashes to bullets
                 .replace(/```[\s\S]*?```/g, '') // Remove code blocks
                 .replace(/(\d+)%/g, '$1%')  // Clean percentage formatting
-                .replace(/\$\s?(\d)/g, '$$$1'); // Fix currency formatting
+                .replace(/\$\s?(\d)/g, '₹$1'); // Fix currency formatting
 
             messageDiv.textContent = cleanContent;
             chatMessages.insertBefore(messageDiv, typingIndicator);
@@ -877,7 +880,7 @@ button {
                 
                 // Handle greetings
                 if (isGreeting(message)) {
-                    botResponse = "Hello! I'm your mortgage expert assistant. I can help with:\n• Payment calculations\n• Rate comparisons\n• Mortgage advice\n\nWhat would you like to know?";
+                    botResponse = "Hello! I'm your home loan expert assistant. I can help with:\n• EMI calculations\n• Rate comparisons\n• Loan advice\n\nWhat would you like to know?";
                 }
                 // Handle mortgage calculations
                 else if (isMortgageQuery(message)) {
